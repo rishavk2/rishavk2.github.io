@@ -1,0 +1,99 @@
+:root {
+  --bg: #ffffff;
+  --text: #1f2328;
+  --muted: #59636e;
+  --rule: #d8dee4;
+  --link: #13294b;      /* Illinois blue */
+  --accent: #e84a27;    /* Illinois orange */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111418;
+    --text: #e6e8eb;
+    --muted: #9aa4af;
+    --rule: #2d333b;
+    --link: #8fb3ff;
+    --accent: #ff7a57;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 56px 16px 32px;
+}
+
+header {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.1rem;
+  line-height: 1.2;
+}
+
+.subtitle {
+  margin: 6px 0 10px;
+  color: var(--muted);
+}
+
+.links { display: flex; flex-wrap: wrap; gap: 6px 18px; }
+
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; color: var(--accent); }
+
+h2 {
+  font-size: 1.2rem;
+  margin: 36px 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.entries, .pubs { list-style: none; padding: 0; margin: 0; }
+
+.entries li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.when {
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.pubs li { margin-bottom: 16px; }
+
+footer {
+  margin-top: 48px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 560px) {
+  header { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .entries li { flex-direction: column; gap: 0; }
+}
