@@ -9,103 +9,221 @@
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Rishav Kumar</title>
   <meta name="description" content="Rishav Kumar, M.S. student in ECE at the University of Illinois Urbana-Champaign, working on vision-based navigation for autonomous drones.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-    <header>
-      <!-- To add a photo: put photo.jpg in this folder and uncomment the line below. -->
-      <!-- <img class="photo" src="photo.jpg" alt="Photo of Rishav Kumar" width="160" height="160"> -->
-      <div>
+  <nav class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#top">Rishav Kumar</a>
+      <div class="menu">
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <!-- ============ PROFILE + BIO ============ -->
+    <section id="about" class="hero">
+      <div class="profile">
+        <!-- To use a real photo: put photo.jpg (square) in this folder, then replace
+             the <div class="avatar">…</div> below with:
+             <img class="avatar" src="photo.jpg" alt="Rishav Kumar" width="200" height="200"> -->
+        <div class="avatar" aria-hidden="true">RK</div>
+
         <h1>Rishav Kumar</h1>
-        <p class="subtitle">
-          M.S. Student, Electrical &amp; Computer Engineering<br>
+        <p class="role">M.S. Student, ECE</p>
+        <p class="affil">
+          <a href="https://mitras.ece.illinois.edu/" rel="noopener">Reliable Autonomy Lab</a><br>
           University of Illinois Urbana-Champaign
         </p>
-        <nav class="links">
-          <a href="mailto:rishav.kumar.das03@gmail.com">Email</a>
-          <!-- Fill in and uncomment the ones you want: -->
-          <!-- <a href="https://github.com/USERNAME" rel="noopener">GitHub</a> -->
-          <!-- <a href="https://www.linkedin.com/in/USERNAME" rel="noopener">LinkedIn</a> -->
-          <!-- <a href="https://scholar.google.com/citations?user=ID" rel="noopener">Scholar</a> -->
-          <!-- <a href="cv.pdf">CV</a> -->
-        </nav>
+
+        <ul class="icons">
+          <li>
+            <a href="mailto:rishav.kumar.das03@gmail.com" aria-label="Email" title="Email">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M3 5.5h18v13H3z M3.5 6l8.5 7 8.5-7"/></svg>
+            </a>
+          </li>
+          <!-- Fill in your username and uncomment:
+          <li>
+            <a href="https://github.com/USERNAME" rel="noopener" aria-label="GitHub" title="GitHub">
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+            </a>
+          </li>
+          -->
+          <!-- Fill in your profile and uncomment:
+          <li>
+            <a href="https://www.linkedin.com/in/USERNAME" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.6 4.77 6v5.45h-4v-4.83c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.91h-3.95z"/></svg>
+            </a>
+          </li>
+          -->
+          <!-- Add a redacted cv.pdf (no phone/address) and uncomment:
+          <li>
+            <a href="cv.pdf" aria-label="CV" title="CV">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M6 2.5h8.5L19 7v14.5H6z M14 2.5V7.5h5 M9 12h7 M9 15.5h7 M9 19h4"/></svg>
+            </a>
+          </li>
+          -->
+        </ul>
       </div>
-    </header>
 
-    <section>
-      <h2>About</h2>
-      <p>
-        I am an M.S. student in Electrical &amp; Computer Engineering at the University of Illinois
-        Urbana-Champaign, focusing on controls and robotics. I work in the
-        <a href="https://mitras.ece.illinois.edu/" rel="noopener">Reliable Autonomy Lab</a>,
-        advised by Prof. <a href="https://mitras.ece.illinois.edu/" rel="noopener">Sayan Mitra</a>.
-        Before that, I earned my B.S. in Electrical Engineering with a minor in Computer Science, also at Illinois.
-      </p>
+      <div class="bio">
+        <h2>Biography</h2>
+        <p>
+          I am an M.S. student in Electrical &amp; Computer Engineering at the University of Illinois
+          Urbana-Champaign, focusing on controls and robotics. I work in the
+          <a href="https://mitras.ece.illinois.edu/" rel="noopener">Reliable Autonomy Lab</a>,
+          advised by Prof. <a href="https://mitras.ece.illinois.edu/" rel="noopener">Sayan Mitra</a>,
+          on vision-based navigation for agile autonomous drones.
+        </p>
+        <p>
+          Before graduate school, I earned my B.S. in Electrical Engineering with a minor in Computer Science
+          at Illinois, where I led the data-acquisition and power-distribution teams on Formula SAE. I have also
+          interned as a software engineer at Boeing and served as a teaching assistant for several ECE courses.
+        </p>
+
+        <div class="twocol">
+          <div>
+            <h3>Interests</h3>
+            <ul class="bullets">
+              <li>Vision-based navigation &amp; control</li>
+              <li>Agile aerial robotics</li>
+              <li>GPS-denied localization</li>
+              <li>Event cameras</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Education</h3>
+            <ul class="edu">
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3zm-6.5 9.3V16c0 1.66 2.91 3 6.5 3s6.5-1.34 6.5-3v-3.7L12 16l-6.5-3.7z"/></svg>
+                <div>
+                  <strong>M.S. in Electrical &amp; Computer Engineering</strong>, 2027 (expected)
+                  <span class="muted">University of Illinois Urbana-Champaign</span>
+                </div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3zm-6.5 9.3V16c0 1.66 2.91 3 6.5 3s6.5-1.34 6.5-3v-3.7L12 16l-6.5-3.7z"/></svg>
+                <div>
+                  <strong>B.S. in Electrical Engineering</strong>, 2025
+                  <span class="muted">Minor in Computer Science<br>University of Illinois Urbana-Champaign</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section>
+    <!-- ============ NEWS ============ -->
+    <!-- Newest first. Copy an <li> to add an item. -->
+    <section id="news">
+      <h2>News</h2>
+      <ul class="news">
+        <li>
+          <span class="date">2026</span>
+          <span>Joined the <a href="https://mitras.ece.illinois.edu/" rel="noopener">Reliable Autonomy Lab</a> at UIUC.</span>
+        </li>
+        <li>
+          <span class="date">May 2025</span>
+          <span>Graduated with a B.S. in Electrical Engineering from UIUC.</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ RESEARCH ============ -->
+    <section id="research">
       <h2>Research</h2>
-      <p>
-        I am interested in vision-based navigation and control for agile autonomous drones.
-        My current work looks at how high-speed drones can fly and localize themselves from
-        onboard cameras alone, without GPS. This includes generalizable vision-based drone racing
-        in photorealistic Gaussian-splatting simulation, and using event cameras to recover
-        absolute position when conventional images are motion-blurred.
-      </p>
-    </section>
-
-    <section>
-      <h2>Education</h2>
-      <ul class="entries">
-        <li>
-          <span class="what"><strong>M.S., Electrical &amp; Computer Engineering</strong> (Controls &amp; Robotics)<br>
-          University of Illinois Urbana-Champaign</span>
-          <span class="when">2025 – 2027 (expected)</span>
-        </li>
-        <li>
-          <span class="what"><strong>B.S., Electrical Engineering</strong>, Minor in Computer Science<br>
-          University of Illinois Urbana-Champaign</span>
-          <span class="when">2021 – 2025</span>
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Experience</h2>
-      <ul class="entries">
-        <li>
-          <span class="what"><strong>Graduate Researcher</strong>, Reliable Autonomy Lab, UIUC</span>
-          <span class="when">2026 – present</span>
-        </li>
-        <li>
-          <span class="what"><strong>Software Engineering Intern</strong>, Boeing</span>
-          <span class="when">Summers 2023, 2024</span>
-        </li>
-        <li>
-          <span class="what"><strong>Data Acquisition &amp; Power Distribution Lead</strong>, Formula SAE, UIUC</span>
-          <span class="when">2021 – 2025</span>
-        </li>
-      </ul>
+      <div class="card">
+        <p>
+          I am interested in how high-speed drones can fly and localize themselves from onboard cameras alone,
+          without GPS. My current work spans generalizable vision-based drone racing in photorealistic
+          Gaussian-splatting simulation, and using event cameras to recover absolute position when
+          conventional images are motion-blurred.
+        </p>
+        <ul class="tags">
+          <li>Drone racing</li>
+          <li>Gaussian splatting</li>
+          <li>Event cameras</li>
+          <li>Visual localization</li>
+        </ul>
+      </div>
     </section>
 
     <!--
+    ============ PUBLICATIONS ============
     Uncomment once you have papers. Copy the <li> for each one.
-    <section>
+    <section id="publications">
       <h2>Publications</h2>
       <ul class="pubs">
         <li>
-          <strong>Paper Title</strong><br>
-          A. Author, <u>R. Kumar</u>, S. Mitra<br>
-          <em>Venue</em>, 2027 · <a href="https://arxiv.org/abs/XXXX">arXiv</a>
+          <a class="pub-title" href="https://arxiv.org/abs/XXXX">Paper Title</a>
+          <span>A. Author, <strong>R. Kumar</strong>, S. Mitra</span>
+          <em>Venue</em>, 2027
+          <span class="pub-links"><a href="https://arxiv.org/abs/XXXX">PDF</a><a href="https://github.com/">Code</a></span>
         </li>
       </ul>
     </section>
     -->
 
-    <footer>
-      <p>Last updated September 2026</p>
-    </footer>
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <ol class="timeline">
+        <li>
+          <div class="tl-head">
+            <strong>Graduate Researcher</strong>
+            <span class="date">2026 – Present</span>
+          </div>
+          <span class="muted">Reliable Autonomy Lab, UIUC</span>
+          <p class="tl-desc">
+            Vision-based navigation for agile drones: generalizable drone racing in photorealistic
+            simulation, and event-camera localization under motion blur.
+          </p>
+        </li>
+        <li>
+          <div class="tl-head">
+            <strong>Teaching Assistant</strong>
+            <!-- Add the semesters here, e.g. <span class="date">2024 – Present</span> -->
+          </div>
+          <span class="muted">Department of Electrical &amp; Computer Engineering, UIUC</span>
+          <p class="tl-desc">
+            ECE 110 (Introduction to Electronics), ECE 340 (Semiconductor Electronics),
+            and ECE 470 (Introduction to Robotics).
+          </p>
+        </li>
+        <li>
+          <div class="tl-head">
+            <strong>Data Acquisition &amp; Power Distribution Lead</strong>
+            <span class="date">2021 – 2025</span>
+          </div>
+          <span class="muted">Formula SAE, UIUC</span>
+          <p class="tl-desc">
+            Redesigned the battery management system hardware and software, instrumented 20+ sensors
+            for data-driven vehicle design, and mentored 15+ engineers across two subsystems.
+          </p>
+        </li>
+        <li>
+          <div class="tl-head">
+            <strong>Software Engineering Intern</strong>
+            <span class="date">Summers 2023 &amp; 2024</span>
+          </div>
+          <span class="muted">Boeing · St. Louis, MO</span>
+          <p class="tl-desc">
+            Developed and validated test software for flight-control systems, including
+            hardware-in-the-loop testing.
+          </p>
+        </li>
+      </ol>
+    </section>
   </main>
+
+  <footer>
+    <p>© 2026 Rishav Kumar · Last updated September 2026</p>
+  </footer>
 </body>
 </html>
