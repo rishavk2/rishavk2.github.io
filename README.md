@@ -20,7 +20,7 @@ Plain HTML + CSS, no build step. Edit `index.html`, commit, push.
 
 - Edit `index.html` → `git commit -am "Update" && git push`. Live within ~1 minute.
 - Photo: add `photo.jpg` (square, ~400×400) and swap the `RK` avatar `<div>` for the `<img>` line in the comment above it.
-- News: copy an `<li>` in the News section (newest first).
+- News: hidden for now; uncomment the News section in `index.html` and add `<a href="#news">News</a>` to the top menu.
 - GitHub/LinkedIn: fill in the username in the commented icon blocks and uncomment them.
 - CV: add a **redacted** `cv.pdf` (no phone/home address) and uncomment the CV link.
 - Publications: uncomment the Publications section and copy the `<li>` per paper.
